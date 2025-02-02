@@ -1,0 +1,860 @@
+* {
+    margin: 0;
+    padding: 0;
+ }
+  
+ body, html {
+   color: #ffffff;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   --c-0: hsla(97, 2%, 11%, 1);
+   --x-0: 91%;
+   --y-0: 90%;
+   --y-1: 24%;
+   --c-1: hsla(75, 0%, 0%, 1);
+   --x-1: 17%;
+   --c-2: hsla(248, 37%, 20%, 1);
+   --x-2: 11%;
+   --y-2: 32%;
+   --c-3: hsla(254, 100%, 52%, 1);
+   --x-3: 2%;
+   --y-3: 31%;
+   --c-4: hsla(349, 0%, 0%, 1);
+   --x-4: 74%;
+   --y-4: 93%;
+   background-color: hsla(356, 0%, 0%, 1);
+   background-image: radial-gradient(circle at var(--x-0) var(--y-0), var(--c-0) var(--s-start-0), transparent var(--s-end-0)), radial-gradient(circle at var(--x-1) var(--y-1), var(--c-1) var(--s-start-1), transparent var(--s-end-1)), radial-gradient(circle at var(--x-2) var(--y-2), var(--c-2) var(--s-start-2), transparent var(--s-end-2)), radial-gradient(circle at var(--x-3) var(--y-3), var(--c-3) var(--s-start-3), transparent var(--s-end-3)), radial-gradient(circle at var(--x-4) var(--y-4), var(--c-4) var(--s-start-4), transparent var(--s-end-4));
+   animation: hero-gradient-animation 10s linear infinite alternate;
+   background-blend-mode: normal, normal, normal, normal, normal;
+ }
+ 
+ @keyframes hero-gradient-animation {
+   0% {
+     --c-0: hsla(97, 2%, 11%, 1);
+     --x-0: 91%;
+     --s-start-0: 1%;
+     --s-end-0: 61%;
+     --y-0: 90%;
+     --y-1: 24%;
+     --c-1: hsla(75, 0%, 0%, 1);
+     --s-start-1: 0%;
+     --s-end-1: 55%;
+     --x-1: 17%;
+     --c-2: hsla(248, 37%, 20%, 1);
+     --s-start-2: 19%;
+     --s-end-2: 54%;
+     --x-2: 11%;
+     --y-2: 32%;
+     --c-3: hsla(254, 100%, 52%, 1);
+     --x-3: 2%;
+     --s-start-3: 0%;
+     --s-end-3: 67%;
+     --y-3: 31%;
+     --c-4: hsla(349, 0%, 0%, 1);
+     --x-4: 74%;
+     --y-4: 93%;
+     --s-start-4: 12%;
+     --s-end-4: 82%;
+   }
+ 
+   100% {
+     --c-0: hsla(313, 0%, 0%, 1);
+     --x-0: 49%;
+     --s-start-0: 19%;
+     --s-end-0: 69%;
+     --y-0: 25%;
+     --y-1: 41%;
+     --c-1: hsla(242, 88%, 22%, 1);
+     --s-start-1: 3%;
+     --s-end-1: 77%;
+     --x-1: 1%;
+     --c-2: hsla(321, 0%, 0%, 1);
+     --s-start-2: 6%;
+     --s-end-2: 73%;
+     --x-2: 44%;
+     --y-2: 93%;
+     --c-3: hsla(0, 0%, 0%, 1);
+     --x-3: 97%;
+     --s-start-3: 8%;
+     --s-end-3: 86%;
+     --y-3: 51%;
+     --c-4: hsla(172, 95%, 37%, 1);
+     --x-4: 10%;
+     --y-4: 69%;
+     --s-start-4: 20%;
+     --s-end-4: 75%;
+   }
+ }
+ 
+ @property --c-0 {
+   syntax: '<color>';
+   inherits: false;
+   initial-value: hsla(97, 2%, 11%, 1);
+ }
+ 
+ @property --x-0 {
+   syntax: '<percentage>';
+   inherits: false;
+   initial-value: 91%;
+ }
+ 
+ @property --s-start-0 {
+   syntax: '<percentage>';
+   inherits: false;
+   initial-value: 1%;
+ }
+ 
+ @property --s-end-0 {
+   syntax: '<percentage>';
+   inherits: false;
+   initial-value: 61%;
+ }
+ 
+ @property --y-0 {
+   syntax: '<percentage>';
+   inherits: false;
+   initial-value: 90%;
+ }
+ 
+ @property --y-1 {
+   syntax: '<percentage>';
+   inherits: false;
+   initial-value: 24%;
+ }
+ 
+ @property --c-1 {
+   syntax: '<color>';
+   inherits: false;
+   initial-value: hsla(75, 0%, 0%, 1);
+ }
+ 
+ @property --s-start-1 {
+   syntax: '<percentage>';
+   inherits: false;
+   initial-value: 0%;
+ }
+ 
+ @property --s-end-1 {
+   syntax: '<percentage>';
+   inherits: false;
+   initial-value: 55%;
+ }
+ 
+ @property --x-1 {
+   syntax: '<percentage>';
+   inherits: false;
+   initial-value: 17%;
+ }
+ 
+ @property --c-2 {
+   syntax: '<color>';
+   inherits: false;
+   initial-value: hsla(248, 37%, 20%, 1);
+ }
+ 
+ @property --s-start-2 {
+   syntax: '<percentage>';
+   inherits: false;
+   initial-value: 19%;
+ }
+ 
+ @property --s-end-2 {
+   syntax: '<percentage>';
+   inherits: false;
+   initial-value: 54%;
+ }
+ 
+ @property --x-2 {
+   syntax: '<percentage>';
+   inherits: false;
+   initial-value: 11%;
+ }
+ 
+ @property --y-2 {
+   syntax: '<percentage>';
+   inherits: false;
+   initial-value: 32%;
+ }
+ 
+ @property --c-3 {
+   syntax: '<color>';
+   inherits: false;
+   initial-value: hsla(254, 100%, 52%, 1);
+ }
+ 
+ @property --x-3 {
+   syntax: '<percentage>';
+   inherits: false;
+   initial-value: 2%;
+ }
+ 
+ @property --s-start-3 {
+   syntax: '<percentage>';
+   inherits: false;
+   initial-value: 0%;
+ }
+ 
+ @property --s-end-3 {
+   syntax: '<percentage>';
+   inherits: false;
+   initial-value: 67%;
+ }
+ 
+ @property --y-3 {
+   syntax: '<percentage>';
+   inherits: false;
+   initial-value: 31%;
+ }
+ 
+ @property --c-4 {
+   syntax: '<color>';
+   inherits: false;
+   initial-value: hsla(349, 0%, 0%, 1);
+ }
+ 
+ @property --x-4 {
+   syntax: '<percentage>';
+   inherits: false;
+   initial-value: 74%;
+ }
+ 
+ @property --y-4 {
+   syntax: '<percentage>';
+   inherits: false;
+   initial-value: 93%;
+ }
+ 
+ @property --s-start-4 {
+   syntax: '<percentage>';
+   inherits: false;
+   initial-value: 12%;
+ }
+ 
+ @property --s-end-4 {
+   syntax: '<percentage>';
+   inherits: false;
+   initial-value: 82%;
+ }
+  
+/*NAVIGATION*/
+  
+  header {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .left-side {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5vmax;
+  }
+  
+  .right-side {
+    display: flex;
+    flex-direction: row;
+    gap: 3vmax;
+    margin-right: 5vmax;
+  }
+  
+  nav {
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #ffffff;
+    padding: 20px;
+    transition: background 0.5s ease;
+    width: 75%; 
+    margin: 0 auto;
+    margin-top: 2vmax;
+    border-radius: 50px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 2vmax;
+    padding: 10px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    font-size: 1.3em;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+    color: #000000;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    color: #027585;
+  }
+  
+  nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background: #027585;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  nav a:hover::after {
+    transform: scaleX(1);
+  }
+ 
+/*MAIN SECTION*/
+ 
+  #main {
+   margin-bottom: 20vmax;
+ }
+ 
+ .main-title {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   align-items: center;
+   font-size: 8em;
+   margin-top: 15vmax;
+ }
+
+
+/*TITLE*/
+
+.products-title {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 5vmax;
+}
+
+/*FIRST PRODUCT*/
+
+#first-product {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0vmax 10vmax 8vmax 10vmax;
+}
+
+.sides {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.first-left {
+    width: 50%;
+    display: flex;
+    justify-items: flex-start;
+}
+
+.first-left img {
+    width: 600px;
+}
+
+.first-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: flex-end;
+}
+
+.first-right h3 {
+    font-size: 3em;
+    margin-bottom: 0.5vmax;
+}
+
+.first-right ul {
+    list-style: none;
+    color: rgb(221, 219, 219); 
+    margin-bottom: 2vmax;
+}
+
+#quote {
+    margin-bottom: 2vmax;
+    text-align: center;
+}
+
+.first-right li {
+    margin-bottom: 0.5vmax;
+}
+
+.first-right strong {
+    font-size: 1.2em;
+    z-index: 20;
+}
+.first-right button {
+    color: #ffffff;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    background: #0b284d;
+    position: relative;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 
+              5px -5px 30px rgba(3, 169, 244, 0.3),
+              -5px 5px 30px rgba(255, 0, 88, 0.3); 
+}
+
+.first-right button::before {
+    content: '';
+    position: absolute;
+    width: 230px;
+    background-image: linear-gradient(180deg, rgb(212, 0, 255), rgb(7, 185, 255));
+    height: 70%;
+    animation: rotBGimg 5s linear infinite;
+    transition: all 0.4s linear;
+  }
+  
+.first-right button::after {
+    content: '';
+    position: absolute;
+    background: #07182E;
+    inset: 2px;
+    border-radius: 15px;
+  }
+
+@keyframes rotBGimg {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+/*SECOND PRODUCT*/
+
+#second-product {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0vmax 10vmax 10vmax 10vmax;
+}
+
+.second-sides {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 5vmax; 
+}
+
+.second-left {
+    width: 50%;
+    display: flex;
+    justify-items: flex-start;
+}
+
+.second-left img {
+    width: 800px;
+}
+
+.second-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: flex-end;
+}
+
+.second-right h3 {
+    font-size: 3em;
+    margin-bottom: 0.5vmax;
+}
+
+.second-right ul {
+    list-style: none;
+    color: rgb(221, 219, 219); 
+    margin-bottom: 2vmax;
+}
+
+#quote {
+    margin-bottom: 2vmax;
+    text-align: center;
+}
+
+.second-right li {
+    margin-bottom: 0.5vmax;
+}
+
+.second-right strong {
+    font-size: 1.2em;
+    z-index: 50;
+}
+.second-right button {
+    color: #ffffff;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    background: #0b284d;
+    position: relative;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 
+              5px -5px 30px rgba(3, 169, 244, 0.3),
+              -5px 5px 30px rgba(255, 0, 88, 0.3); 
+}
+
+.second-right button::before {
+    content: '';
+    position: absolute;
+    width: 230px;
+    background-image: linear-gradient(180deg, rgb(212, 0, 255), rgb(7, 185, 255));
+    height: 70%;
+    animation: rotBGimg 5s linear infinite;
+    transition: all 0.4s linear;
+  }
+  
+  .second-right button::after {
+    content: '';
+    position: absolute;
+    background: #07182E;
+    inset: 2px;
+    border-radius: 15px;
+  }
+
+  @keyframes rotBGimg {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+/*SERIES*/
+
+#series {
+    margin: 0vmax 0vmax 5vmax 0vmax;
+}
+
+.series-title {
+    text-align: center;
+    font-size: 3em;
+    margin: 0vmax 0vmax 1vmax 0vmax;
+}
+
+.series-subtitle {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 3vmax;
+  }
+
+.series-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5vmax;
+    justify-content: center;
+    align-items: center;
+}
+
+.series-card {
+    width: 400px;
+    height: 400px;
+    background: #0b284d;
+    position: relative;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 
+              5px -5px 30px rgba(1, 174, 255, 0.2),
+              -5px 5px 30px rgba(183, 0, 255, 0.2);
+    transition: transform 0.5s ease;
+  }
+  
+  .series-card:hover {
+    transform: scale(1.03);
+  }
+
+  .series-card::before {
+    content: '';
+    position: absolute;
+    width: 150px;
+    background-image: linear-gradient(180deg, rgb(212, 0, 255), rgb(7, 185, 255));
+    height: 150%;
+    animation: rotBGimg 5s linear infinite;
+    transition: all 0.4s linear;
+  }
+  
+  .series-card::after {
+    content: '';
+    position: absolute;
+    background: #07182E;
+    inset: 5px;
+    border-radius: 15px;
+  }  
+
+  @keyframes rotBGimg {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .series-card img {
+    z-index: 20;
+    width: 388px;
+    height: 388px;
+    object-fit: fill;
+    border-radius: 15px;
+  }
+
+  .series-card h3 {
+    z-index: 50;
+    position: absolute;
+    bottom: 40px;
+    font-size: 2em;
+  }
+
+  .series-cards a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+/*HEADPHONES SERIES*/
+
+#headphones-series {
+    margin: 0vmax 0vmax 5vmax 0vmax;
+}
+
+.headphones-series-title {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 3vmax;
+}
+
+.headphones-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5vmax;
+    justify-content: center;
+    align-items: center;
+}
+
+.headphones-card {
+    width: 400px;
+    height: 400px;
+    background: #0b284d;
+    position: relative;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 
+              5px -5px 30px rgba(1, 174, 255, 0.2),
+              -5px 5px 30px rgba(183, 0, 255, 0.2);
+    transition: transform 0.5s ease;
+  }
+  
+  .headphones-card:hover {
+    transform: scale(1.03);
+  }
+
+  .headphones-card::before {
+    content: '';
+    position: absolute;
+    width: 150px;
+    background-image: linear-gradient(180deg, rgb(212, 0, 255), rgb(7, 185, 255));
+    height: 150%;
+    animation: rotBGimg 5s linear infinite;
+    transition: all 0.4s linear;
+  }
+  
+  .headphones-card::after {
+    content: '';
+    position: absolute;
+    background: #07182E;
+    inset: 5px;
+    border-radius: 15px;
+  }  
+
+  @keyframes rotBGimg {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .headphones-card img {
+    z-index: 20;
+    width: 388px;
+    height: 388px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+
+  .headphones-card h3 {
+    z-index: 50;
+    position: absolute;
+    bottom: 40px;
+    font-size: 2em;
+  }
+
+  .headphones-cards a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+/*SMARTWATCHES SERIES*/
+
+#smartwatch-series {
+    margin: 0vmax 0vmax 5vmax 0vmax;
+}
+
+.smartwatch-series-title {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 3vmax;
+}
+
+.smartwatches-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5vmax;
+    justify-content: center;
+    align-items: center;
+}
+
+.smartwatches-card {
+    width: 400px;
+    height: 400px;
+    background: #0b284d;
+    position: relative;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 
+              5px -5px 30px rgba(1, 174, 255, 0.2),
+              -5px 5px 30px rgba(183, 0, 255, 0.2);
+    transition: transform 0.5s ease;
+  }
+  
+  .smartwatches-card:hover {
+    transform: scale(1.03);
+  }
+
+  .smartwatches-card::before {
+    content: '';
+    position: absolute;
+    width: 150px;
+    background-image: linear-gradient(180deg, rgb(212, 0, 255), rgb(7, 185, 255));
+    height: 150%;
+    animation: rotBGimg 5s linear infinite;
+    transition: all 0.4s linear;
+  }
+  
+  .smartwatches-card::after {
+    content: '';
+    position: absolute;
+    background: #07182E;
+    inset: 5px;
+    border-radius: 15px;
+  }  
+
+  @keyframes rotBGimg {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .smartwatches-card img {
+    z-index: 20;
+    width: 388px;
+    height: 388px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+
+  .smartwatches-card h3 {
+    z-index: 50;
+    position: absolute;
+    bottom: 40px;
+    font-size: 2em;
+  }
+
+  .smartwatches-cards a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+/*SCROLL BUTTON*/
+ 
+#scrollToTopBtn {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    right: 50px; 
+    bottom: 50px; 
+    background-color: #0cbaba;
+    background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+    border: none;
+    border-radius: 20%;
+    cursor: pointer; 
+    z-index: 1000; 
+ }
+ 
+ button i {
+   color: #ffffff;
+   font-size: 2em;
+}
+  
+/*FOOTER*/
+
+footer {
+  background-color: #ffffff;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  margin: 0vmax 5vmax 0vmax 5vmax;
+}
+
+.footer-content img {
+  width: 100px;
+}
+
+.footer-content a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 1.2em;
+}

@@ -346,6 +346,7 @@ hr {
 .company-content p {
   margin: 1vmax 0vmax 0vmax 0vmax;
   padding: 0vmax 15vmax 0vmax 15vmax;
+  font-size: 1.5em;
 }
 
 .gallery {
@@ -365,6 +366,7 @@ hr {
             5px -5px 30px rgba(3, 169, 244, 0.5),
             -5px 5px 30px rgba(255, 0, 88, 0.5);  
   transition: transform 0.5s ease;
+  border-radius: 15px;
 }
 
 .gallery img:hover {
@@ -400,6 +402,7 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 15px;
 }
 
 .card::before {
@@ -410,6 +413,7 @@ hr {
   width: 100%;
   height: 100%;
   background: linear-gradient(315deg,#03a9f4,#ff0058);
+  border-radius: 15px;
 }
 
 .card::after {
@@ -421,6 +425,7 @@ hr {
   height: 100%;
   background: linear-gradient(315deg,#03a9f4,#ff0058);
   filter: blur(30px);
+  border-radius: 15px;
 }
 
 .first {
@@ -431,11 +436,13 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 15px;
 }
 
 #first-image {
   width: 422px;
   height: 549px;
+  border-radius: 15px;
 }
 
 .third {
@@ -446,11 +453,13 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 15px;
 }
 
 #third-image {
   width: 422px;
   height: 549px;
+  border-radius: 15px;
 }
 
 .card b {
@@ -458,6 +467,7 @@ hr {
   inset: 6px;
   background: rgba(0, 0, 0, 0.6);
   z-index: 2;
+  border-radius: 15px;
 }
 
 .card img {
@@ -468,6 +478,7 @@ hr {
   z-index: 3;
   scale: 0.8;
   transition: 0.5s;
+  border-radius: 15px;
 }
 
 .card:hover img {
@@ -536,7 +547,6 @@ hr {
   cursor: pointer;
   width: 200px;
   height: 50px;
-  border-radius: 15px;
   background: #0b284d;
   position: relative;
   display: flex;
