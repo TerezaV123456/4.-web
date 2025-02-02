@@ -812,6 +812,95 @@
     text-decoration: none;
   }
 
+/*SMARTPHONE SERIES*/
+
+#smartphones-series {
+  margin: 0vmax 0vmax 3vmax 0vmax;
+}
+
+.smartphones-series-title {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 3vmax;
+}
+
+.smartphones-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5vmax;
+  justify-content: center;
+  align-items: center;
+}
+
+.smartphones-card {
+  width: 400px;
+  height: 400px;
+  background: #0b284d;
+  position: relative;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 
+            5px -5px 30px rgba(1, 174, 255, 0.2),
+            -5px 5px 30px rgba(183, 0, 255, 0.2);
+  transition: transform 0.5s ease;
+}
+
+.smartphones-card:hover {
+  transform: scale(1.03);
+}
+
+.smartphones-card::before {
+  content: '';
+  position: absolute;
+  width: 150px;
+  background-image: linear-gradient(180deg, rgb(212, 0, 255), rgb(7, 185, 255));
+  height: 150%;
+  animation: rotBGimg 5s linear infinite;
+  transition: all 0.4s linear;
+}
+
+.smartphones-card::after {
+  content: '';
+  position: absolute;
+  background: #07182E;
+  inset: 5px;
+  border-radius: 15px;
+}  
+
+@keyframes rotBGimg {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.smartphones-card img {
+  z-index: 20;
+  width: 388px;
+  height: 388px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.smartphones-card h3 {
+  z-index: 50;
+  position: absolute;
+  bottom: 40px;
+  font-size: 2em;
+}
+
+.smartphones-cards a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 /*SCROLL BUTTON*/
  
 #scrollToTopBtn {
