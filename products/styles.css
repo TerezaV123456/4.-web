@@ -235,76 +235,92 @@
    initial-value: 82%;
  }
   
-/*NAVIGATION*/
-  
-  header {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .left-side {
-    display: flex;
-    flex-direction: row;
-    margin-left: 5vmax;
-  }
-  
-  .right-side {
-    display: flex;
-    flex-direction: row;
-    gap: 3vmax;
-    margin-right: 5vmax;
-  }
-  
-  nav {
-    position: sticky;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background: #ffffff;
-    padding: 20px;
-    transition: background 0.5s ease;
-    width: 75%; 
-    margin: 0 auto;
-    margin-top: 2vmax;
-    border-radius: 50px;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    gap: 2vmax;
-    padding: 10px;
-  }
-  
-  nav a {
-    text-decoration: none;
-    font-size: 1.3em;
-    position: relative;
-    transition: color 0.3s ease-in-out;
-    color: #000000;
-    font-weight: bold;
-  }
-  
-  nav a:hover {
-    color: #027585;
-  }
-  
-  nav a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 100%;
-    height: 2px;
-    background: #027585;
-    transform: scaleX(0);
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  nav a:hover::after {
-    transform: scaleX(1);
-  }
+ /*NAVIGATION*/
+ .hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  height: 4px;
+  width: 30px;
+  background-color: #000000;
+  margin: 3px 0;
+}
+
+.nav-links {
+  display: flex;
+}
+
+header {
+display: flex;
+justify-content: center;
+}
+
+.left-side {
+display: flex;
+flex-direction: row;
+margin-left: 5vmax;
+}
+
+.right-side {
+display: flex;
+flex-direction: row;
+gap: 3vmax;
+margin-right: 5vmax;
+}
+
+nav {
+position: sticky;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+background: #ffffff;
+padding: 20px;
+transition: background 0.5s ease;
+width: 75%; 
+margin: 0 auto;
+margin-top: 2vmax;
+border-radius: 50px;
+}
+
+nav ul {
+list-style: none;
+display: flex;
+flex-direction: row;
+gap: 2vmax;
+padding: 10px;
+}
+
+nav a {
+text-decoration: none;
+font-size: 1.3em;
+position: relative;
+transition: color 0.3s ease-in-out;
+color: #000000;
+font-weight: bold;
+}
+
+nav a:hover {
+color: #027585;
+}
+
+nav a::after {
+content: "";
+position: absolute;
+left: 0;
+bottom: -5px;
+width: 100%;
+height: 2px;
+background: #027585;
+transform: scaleX(0);
+transition: transform 0.3s ease-in-out;
+}
+
+nav a:hover::after {
+transform: scaleX(1);
+}
  
 /*MAIN SECTION*/
  
@@ -946,4 +962,216 @@ footer {
   text-decoration: none;
   color: #000000;
   font-size: 1.2em;
+}
+
+@media (max-width: 1500px) {
+  .second-left img {
+    width: 600px;
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .main-title h1 {
+    font-size: 1.2em;
+  }
+
+  .second-left img {
+    width: 500px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .main-title h1 {
+    font-size: 0.9em;
+    text-align: center;
+  }
+
+  .sides {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .first-right {
+    text-align: center;
+    gap: 2vh;
+  }
+
+  #second-product {
+    margin: 0vmax 0vmax 10vmax 0vmax;
+  }
+
+  .second-left img {
+    width: 350px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .second-sides {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .second-right {
+    text-align: center;
+    gap: 2vh;
+    padding: 0;
+    margin: 0;
+  }
+
+  .series-card::before {
+    display: none;
+  }
+
+  .series-card {
+    box-shadow: none;
+  }
+
+  .headphones-card {
+    box-shadow: none;
+  }
+
+  .headphones-card::before {
+    display: none;
+  }
+
+  .smartwatches-card {
+    box-shadow: none;
+  }
+
+  .smartwatches-card::before {
+    display: none;
+  }
+
+  .smartphones-card {
+    box-shadow: none;
+  }
+
+  .smartphones-card::before {
+    display: none;
+  }
+
+}
+
+@media (max-width: 768px) {
+  header {
+    width: 100%;
+  }
+
+  nav {
+    width: 100%;
+    border-radius: 0px;
+    margin: 0;
+  }
+
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      height: 190px;
+      background-color: #ffffff;
+      position: absolute;
+      top: 60px; 
+      left: 0;
+      z-index: 0;
+      border-radius: 0px;
+  }
+
+  .nav-links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links.active {
+      display: flex;
+  }
+
+  .hamburger {
+      display: flex;
+  }
+
+  .main-title h1 {
+    font-size: 0.5em;
+  }
+
+  .products-title {
+    font-size: 1.8em;
+  }
+
+  .sides {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .first-right {
+    text-align: center;
+    gap: 2vh;
+  }
+
+  #second-product {
+    margin: 0vmax 0vmax 10vmax 0vmax;
+  }
+
+  .second-left img {
+    width: 350px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .second-sides {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .second-right {
+    text-align: center;
+    gap: 2vh;
+    padding: 0;
+    margin: 0;
+  }
+
+  .series-card::before {
+    display: none;
+  }
+
+  .series-card {
+    box-shadow: none;
+  }
+
+  .headphones-card {
+    box-shadow: none;
+  }
+
+  .headphones-card::before {
+    display: none;
+  }
+
+  .smartwatches-card {
+    box-shadow: none;
+  }
+
+  .smartwatches-card::before {
+    display: none;
+  }
+
+  .smartphones-card {
+    box-shadow: none;
+  }
+
+  .smartphones-card::before {
+    display: none;
+  }
+
+  .series-title h2 {
+    font-size: 1.2em;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+  }
 }
