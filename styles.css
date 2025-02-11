@@ -240,10 +240,11 @@ body, html {
     display: none;
     flex-direction: column;
     cursor: pointer;
+    margin-top: 3px;
 }
 
 .hamburger .bar {
-    height: 4px;
+    height: 5px;
     width: 30px;
     background-color: #000000;
     margin: 3px 0;
@@ -709,6 +710,10 @@ footer {
 
 @media (max-width: 768px) {
 
+  .left-side {
+    margin-left: 2vmax;
+  }
+
   nav {
     width: 100%;
     border-radius: 0px;
@@ -742,6 +747,10 @@ footer {
       display: flex;
   }
 
+  .right-side {
+    margin-right: 2vw;
+  }
+
   .main-title h1 {
     font-size: 0.6em;
   }
@@ -762,6 +771,10 @@ footer {
     width: 400px;
     height: 400px;
     box-shadow: none;
+  }
+
+  .us-title h2 {
+    font-size: 1em;
   }
 
   .blog-box {

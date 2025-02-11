@@ -240,6 +240,7 @@
   display: none;
   flex-direction: column;
   cursor: pointer;
+  margin-top: 3px;
 }
 
 .hamburger .bar {
@@ -472,6 +473,14 @@ footer {
 
   .nav-links.active {
       display: flex;
+  }
+
+  .right-side {
+    margin-right: 2vw;
+  }
+
+  .left-side {
+    margin-left: 2vmax;
   }
 
   .hamburger {
